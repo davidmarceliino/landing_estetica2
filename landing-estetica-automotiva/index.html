@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#14213D" />
+  <meta name="description" content="Sistema de gestão para estéticas automotivas, lava-rápidos e detailers. Clientes, veículos, serviços, agenda e financeiro em uma única plataforma. Teste grátis por 7 dias." />
+  <title>EstéticaPro — Gestão completa para estética automotiva</title>
+  <link rel="canonical" href="https://gesture-pro.netlify.app/" />
+  <link rel="icon" type="image/svg+xml" href="logo.jpeg" />
+  <link rel="apple-touch-icon" href="logo.jpeg" />
+  <link rel="manifest" href="manifest.json" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="EstéticaPro" />
+  <meta property="og:title" content="EstéticaPro — Gestão completa para estética automotiva" />
+  <meta property="og:description" content="Clientes, veículos, serviços, agenda e financeiro em uma única plataforma. Teste grátis por 7 dias." />
+  <meta property="og:url" content="https://gesture-pro.netlify.app/" />
+  <meta property="og:image" content="https://gesture-pro.netlify.app//logo.jpeg" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "EstéticaPro",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Gestão completa para estéticas automotivas, lava-rápidos e detailers.",
+    "url": "https://gesture-pro.netlify.app/",
+    "image": "https://gesture-pro.netlify.app/logo.jpeg",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL", "description": "Teste grátis por 7 dias — sem cartão de crédito" }
+  }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#" class="navbar__logo" aria-label="EstéticaPro — início">
+        <img src="logo.jpeg" alt="EstéticaPro" class="logo-img" width="36" height="36">
+      </a>
+      <nav class="navbar__nav" id="navbarNav" aria-label="Navegação principal">
+        <a href="#funcionalidades" class="navbar__link">Funcionalidades</a>
+        <a href="#servicos" class="navbar__link">Serviços</a>
+        <a href="#como-funciona" class="navbar__link">Como funciona</a>
+        <a href="#faq" class="navbar__link">Dúvidas</a>
+        <a href="https://wa.me/5519992255296?text=Ol%C3%A1!%20Quero%20testar%20a%20Est%C3%A9ticaPro%20gr%C3%A1tis." target="_blank" rel="noopener" class="btn btn--primary btn--sm">Testar grátis</a>
+      </nav>
+      <button class="navbar__menu" id="navbarMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbarNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="badge"><span class="badge__dot"></span>Teste grátis por 7 dias</span>
+          <h1 class="hero__title">
+            Gestão completa da sua estética,
+            <span class="text-gradient">em um só lugar.</span>
+          </h1>
+          <p class="hero__subtitle">
+            Clientes, veículos, serviços, agenda e financeiro em uma única plataforma — simples, organizada e feita para estéticas automotivas, lava-rápidos e detailers.
+          </p>
+          <div class="hero__cta">
+            <a href="https://gesture-app-kohl.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+              Começar teste grátis
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#video" class="btn btn--outline btn--lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              Ver a plataforma
+            </a>
+          </div>
+          <ul class="hero__trust">
+            <li>Sem cartão de crédito</li>
+            <li>Cancele quando quiser</li>
+            <li>Suporte em português</li>
+          </ul>
+        </div>
+
+        <!-- Mockup interativo do painel -->
+        <div class="hero__mockup" aria-label="Prévia do painel da EstéticaPro">
+          <div class="mockup">
+            <div class="mockup__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="mockup__url">app.esteticapro.com</span>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__side" role="tablist" aria-label="Módulos">
+                <button class="tab is-active" role="tab" aria-selected="true" data-view="dashboard">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                  <span>Painel</span>
+                </button>
+                <button class="tab" role="tab" aria-selected="false" data-view="clientes">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <span>Clientes</span>
+                </button>
+                <button class="tab" role="tab" aria-selected="false" data-view="veiculos">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                  <span>Veículos</span>
+                </button>
+                <button class="tab" role="tab" aria-selected="false" data-view="financeiro">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Financeiro</span>
+                </button>
+              </div>
+
+              <div class="mockup__content">
+                <div class="panel is-active" data-panel="dashboard" role="tabpanel">
+                  <p class="panel__title">Resumo de hoje</p>
+                  <div class="kpis">
+                    <div class="kpi"><span>Agendamentos</span><strong data-count="12">12</strong><em>↑ 23%</em></div>
+                    <div class="kpi"><span>Clientes</span><strong data-count="248">248</strong><em>↑ 8%</em></div>
+                    <div class="kpi kpi--hl"><span>Faturamento</span><strong>R$ 18,7 mil</strong><em>↑ 34%</em></div>
+                  </div>
+                  <div class="chart" aria-hidden="true">
+                    <i style="--h:40%"></i><i style="--h:70%"></i><i class="hl" style="--h:90%"></i><i style="--h:60%"></i><i style="--h:85%"></i><i class="hl" style="--h:100%"></i><i style="--h:75%"></i>
+                  </div>
+                </div>
+
+                <div class="panel" data-panel="clientes" role="tabpanel" hidden>
+                  <p class="panel__title">Próximos atendimentos</p>
+                  <div class="row"><div><strong>Maria Souza</strong><span>VW Gol • Lavagem premium</span></div><b>Hoje</b></div>
+                  <div class="row"><div><strong>João Lima</strong><span>BMW X6 • Polimento completo</span></div><b>14:30</b></div>
+                  <div class="row"><div><strong>Ana Paula</strong><span>Honda Civic • Higienização</span></div><b>Amanhã</b></div>
+                </div>
+
+                <div class="panel" data-panel="veiculos" role="tabpanel" hidden>
+                  <p class="panel__title">Veículos no pátio</p>
+                  <div class="row"><div><strong>BMW X6</strong><span>Preto • ABC-1D23</span></div><b class="st st--work">Em serviço</b></div>
+                  <div class="row"><div><strong>VW Gol</strong><span>Branco • DEF-4E56</span></div><b class="st st--ok">Pronto</b></div>
+                  <div class="row"><div><strong>Honda Civic</strong><span>Azul • GHI-7F89</span></div><b>Agendado</b></div>
+                </div>
+
+                <div class="panel" data-panel="financeiro" role="tabpanel" hidden>
+                  <p class="panel__title">Caixa de hoje</p>
+                  <div class="row"><div><strong>R$ 1.200,00</strong><span>Polimento completo</span></div><b class="st st--ok">Pago</b></div>
+                  <div class="row"><div><strong>R$ 850,00</strong><span>Higienização interna</span></div><b class="st st--ok">Pago</b></div>
+                  <div class="row"><div><strong>R$ 480,00</strong><span>Lavagem premium</span></div><b>Pendente</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating floating--1" aria-hidden="true"><strong>Agendamento confirmado</strong><span>BMW X6 • 14:30</span></div>
+          <div class="floating floating--2" aria-hidden="true"><strong>+R$ 1.200</strong><span>recebido agora</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA ANIMADA -->
+    <div class="marquee-wrap" aria-hidden="true"><div class="marquee">
+      <div class="marquee__track">
+        <span>Polimento</span><span>Vitrificação</span><span>Higienização</span><span>Lavagem premium</span><span>PPF</span><span>Enceramento</span><span>Insulfilm</span><span>Envelopamento</span>
+        <span>Polimento</span><span>Vitrificação</span><span>Higienização</span><span>Lavagem premium</span><span>PPF</span><span>Enceramento</span><span>Insulfilm</span><span>Envelopamento</span>
+      </div>
+    </div></div>
+
+    <!-- MANIFESTO (palavras acendem no scroll) -->
+    <section class="manifesto">
+      <div class="container">
+        <p class="manifesto__text">Chega de caderno, planilha e agenda perdida no WhatsApp. A EstéticaPro organiza toda a sua operação para você focar no que realmente importa: entregar cada carro impecável.</p>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="section problema" id="problema">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Parece familiar?</span>
+          <h2 class="section-title">Muito trabalho, pouco controle.<br><span class="text-accent">O problema não é você — é a falta de sistema.</span></h2>
+        </div>
+        <div class="grid grid--4">
+          <article class="pain reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7A8.4 8.4 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5z"/></svg>
+            <h3>Agendamento perdido no WhatsApp</h3>
+            <p>O cliente marcou, a conversa subiu e ninguém lembrou.</p>
+          </article>
+          <article class="pain reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
+            <h3>Carro sem status</h3>
+            <p>Já ficou pronto? Já foi entregue? Ninguém sabe ao certo.</p>
+          </article>
+          <article class="pain reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <h3>Lucro no escuro</h3>
+            <p>Fatura bem, mas no fim do mês não sabe para onde o dinheiro foi.</p>
+          </article>
+          <article class="pain reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <h3>Tudo na sua cabeça</h3>
+            <p>Se você não está, a operação trava — e o histórico do cliente some.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNCIONALIDADES -->
+    <section class="section funcionalidades" id="funcionalidades">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Funcionalidades</span>
+          <h2 class="section-title">Tudo o que você precisa.<br><span class="text-accent">Nada que você não vai usar.</span></h2>
+          <p class="section-sub">Cada módulo foi pensado para o dia a dia real de quem vive o mercado automotivo.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="feat reveal">
+            <span class="feat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg></span>
+            <h3>Painel do dia</h3>
+            <p>Agenda, entradas abertas e números do dia em uma tela só.</p>
+          </article>
+          <article class="feat reveal">
+            <span class="feat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>
+            <h3>Clientes</h3>
+            <p>Contato, veículos e histórico de serviços na mesma ficha.</p>
+          </article>
+          <article class="feat reveal">
+            <span class="feat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span>
+            <h3>Veículos</h3>
+            <p>Placa, marca, modelo e tudo o que já foi feito em cada carro.</p>
+          </article>
+          <article class="feat reveal">
+            <span class="feat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            <h3>Agenda</h3>
+            <p>Calendário claro, sem conflito de horário e sem esquecimento.</p>
+          </article>
+          <article class="feat reveal">
+            <span class="feat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></span>
+            <h3>Serviços</h3>
+            <p>Valores e custos cadastrados — o lucro de cada atendimento é automático.</p>
+          </article>
+          <article class="feat reveal">
+            <span class="feat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></span>
+            <h3>Ordens de serviço</h3>
+            <p>Registre a entrada do veículo e acompanhe do início à entrega.</p>
+          </article>
+          <article class="feat reveal">
+            <span class="feat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg></span>
+            <h3>Financeiro</h3>
+            <p>Entradas, despesas e custos fixos para saber a saúde real do negócio.</p>
+          </article>
+          <article class="feat reveal">
+            <span class="feat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-5"/></svg></span>
+            <h3>Relatórios</h3>
+            <p>Acompanhe a evolução do negócio e decida com dados, não no achismo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS / ÁREAS DE ATUAÇÃO -->
+    <section class="section servicos" id="servicos">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Serviços</span>
+          <h2 class="section-title">Gestão para <span class="text-accent">diferentes áreas automotivas.</span></h2>
+          <p class="section-sub">Escolha a área da sua empresa e organize serviços, clientes, veículos, agenda e financeiro em um só lugar.</p>
+        </div>
+
+        <div class="servicos__grid">
+          <article class="servico-card servico-card--featured reveal">
+            <span class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 14 8l5 .5-3.8 3.3 1.1 5-4.3-2.7-4.3 2.7 1.1-5L5 8.5 10 8z"/></svg>
+            </span>
+            <div>
+              <h3>Estética automotiva</h3>
+              <p>Polimento, vitrificação, higienização</p>
+            </div>
+          </article>
+
+          <article class="servico-card reveal">
+            <span class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg>
+            </span>
+            <div>
+              <h3>Oficina mecânica</h3>
+              <p>Revisão, motor, suspensão, freios</p>
+            </div>
+          </article>
+
+          <article class="servico-card reveal">
+            <span class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 13h18M5 13l1.5-5h11L19 13M5 17h.01M19 17h.01M6 17h12"/></svg>
+            </span>
+            <div>
+              <h3>Lava-rápido</h3>
+              <p>Lavagem, enceramento, aspiração</p>
+            </div>
+          </article>
+
+          <article class="servico-card reveal">
+            <span class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 17h16M6 17V9l3-4h6l3 4v8M8 13h8"/></svg>
+            </span>
+            <div>
+              <h3>Funilaria e pintura</h3>
+              <p>Lataria, pintura, martelinho</p>
+            </div>
+          </article>
+
+          <article class="servico-card reveal">
+            <span class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+            </span>
+            <div>
+              <h3>Auto elétrica</h3>
+              <p>Elétrica, injeção, ar-condicionado</p>
+            </div>
+          </article>
+
+          <article class="servico-card reveal">
+            <span class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM6 8h12M6 11h12M6 14h7"/></svg>
+            </span>
+            <div>
+              <h3>Vidraçaria automotiva</h3>
+              <p>Para-brisa, vidros, películas</p>
+            </div>
+          </article>
+
+          <article class="servico-card servico-card--wide reveal">
+            <span class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+            </span>
+            <div>
+              <h3>Centro automotivo</h3>
+              <p>Mais de uma especialidade</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VÍDEO -->
+    <section class="section video" id="video">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Veja por dentro</span>
+          <h2 class="section-title">Conheça a <span class="text-accent">EstéticaPro</span> em poucos minutos</h2>
+        </div>
+        <div class="video__player reveal">
+          <video controls preload="metadata" playsinline aria-label="Vídeo de apresentação da EstéticaPro">
+            <source src="WhatsApp%20Video%202026-09-14%20at%2016.33.38.mp4#t=0.5" type="video/mp4" />
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section como-funciona" id="como-funciona">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow eyebrow--light">Como funciona</span>
+          <h2 class="section-title section-title--white">Configure tudo em <span class="text-accent-light">poucos minutos.</span></h2>
+        </div>
+        <div class="steps__rail" aria-hidden="true"><span class="steps__line"></span></div>
+        <ol class="steps">
+          <li class="step reveal"><span class="step__num">1</span><h3>Cadastre seus serviços</h3><p>Com valores e custos de cada um.</p></li>
+          <li class="step reveal"><span class="step__num">2</span><h3>Adicione clientes e veículos</h3><p>Nome, telefone, placa, marca e modelo.</p></li>
+          <li class="step reveal"><span class="step__num">3</span><h3>Registre a primeira entrada</h3><p>Abra a ordem de serviço e acompanhe até a entrega.</p></li>
+          <li class="step reveal"><span class="step__num">4</span><h3>Veja o lucro real</h3><p>Lance as despesas fixas e tenha o financeiro claro.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ANTES × DEPOIS -->
+    <section class="section antes-depois">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Antes × Depois</span>
+          <h2 class="section-title">Menos bagunça.<br><span class="text-accent">Mais controle. Mais lucro.</span></h2>
+        </div>
+        <div class="compare">
+          <div class="compare__col compare__col--antes reveal">
+            <img src="sistemQuebrado.png" alt="Agenda em papel com anotações desorganizadas" width="600" height="400" loading="lazy" decoding="async" />
+            <div class="compare__body">
+              <span class="tag">Sem sistema</span>
+              <ul>
+                <li>Agenda no caderno ou no WhatsApp</li>
+                <li>Status do carro na base do “acho que”</li>
+                <li>Faturamento “mais ou menos uns R$ 15 mil”</li>
+                <li>Histórico do cliente só na memória</li>
+                <li>Planilhas e papéis espalhados</li>
+              </ul>
+            </div>
+          </div>
+          <div class="compare__col compare__col--depois reveal">
+            <div class="compare__body">
+              <span class="tag tag--accent">Com EstéticaPro</span>
+              <ul>
+                <li>Agenda organizada no celular, tablet e computador</li>
+                <li>Status de cada veículo em um clique</li>
+                <li>Entradas, despesas e lucro sempre visíveis</li>
+                <li>Histórico completo de clientes e veículos</li>
+                <li>Tudo centralizado em uma única plataforma</li>
+              </ul>
+              <a href="https://gesture-app-kohl.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary">Quero esse controle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section class="section para-quem">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Para quem é</span>
+          <h2 class="section-title">Feito para quem <span class="text-accent">vive o mercado automotivo.</span></h2>
+        </div>
+        <div class="publico">
+          <figure class="publico__card reveal">
+            <img src="https://images.pexels.com/photos/31389821/pexels-photo-31389821.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Polimento automotivo" width="400" height="400" loading="lazy" decoding="async" />
+            <figcaption><strong>Estética automotiva</strong><span>Polimento, vitrificação, pintura</span></figcaption>
+          </figure>
+          <figure class="publico__card reveal">
+            <img src="https://images.pexels.com/photos/29922284/pexels-photo-29922284.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lavagem automotiva" width="400" height="400" loading="lazy" decoding="async" />
+            <figcaption><strong>Lava-rápido</strong><span>Mensalistas, avulsos, frota</span></figcaption>
+          </figure>
+          <figure class="publico__card reveal">
+            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=400&q=80" alt="Detailer trabalhando em um carro" width="400" height="400" loading="lazy" decoding="async" />
+            <figcaption><strong>Detailer</strong><span>Pacotes premium e técnicos</span></figcaption>
+          </figure>
+          <figure class="publico__card reveal">
+            <img src="https://images.pexels.com/photos/20051463/pexels-photo-20051463.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Carro com proteção de pintura" width="400" height="400" loading="lazy" decoding="async" />
+            <figcaption><strong>Vitrificação e PPF</strong><span>Serviços de alto valor</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container container--narrow">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Dúvidas</span>
+          <h2 class="section-title">Perguntas frequentes</h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Funciona no celular e no tablet?</summary>
+            <p>Sim. A EstéticaPro funciona no navegador de qualquer smartphone, tablet ou computador — basta ter internet.</p>
+          </details>
+          <details class="faq__item">
+            <summary>E se eu não entendo de tecnologia?</summary>
+            <p>A plataforma foi feita para quem não é expert. A interface é simples e você conta com suporte humano em português para te ajudar em cada passo.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Preciso de cartão para testar?</summary>
+            <p>Não. O teste de 7 dias é grátis e não pede cartão de crédito.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Posso cancelar quando quiser?</summary>
+            <p>Sim. Não há fidelidade nem multa por cancelamento.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Meus dados estão seguros?</summary>
+            <p>Sim. A conexão é criptografada e seus dados são seus — nunca são compartilhados com terceiros. Veja nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Quanto tempo leva para começar?</summary>
+            <p>Poucos minutos: você cadastra seus serviços e já pode registrar clientes e agendamentos. O restante você completa no seu ritmo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final" id="cta-final">
+      <div class="container cta-final__inner reveal">
+        <span class="badge badge--dark"><span class="badge__dot"></span>7 dias grátis • sem cartão</span>
+        <h2 class="cta-final__title">Tenha o controle da sua estética <span class="text-accent-light">a partir de hoje.</span></h2>
+        <p class="cta-final__sub">Clientes, veículos, serviços, agenda e financeiro em uma única plataforma.</p>
+        <a href="https://wa.me/5519992255296?text=Ol%C3%A1!%20Quero%20testar%20a%20Est%C3%A9ticaPro%20gr%C3%A1tis." target="_blank" rel="noopener" class="btn btn--primary btn--xl">
+          Começar teste grátis
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <ul class="hero__trust hero__trust--light">
+          <li>Sem cartão de crédito</li>
+          <li>Cancele quando quiser</li>
+          <li>Suporte humano</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="logo.jpeg" alt="EstéticaPro" class="logo-img" width="36" height="36" loading="lazy">
+        <p>Gestão simples para estética automotiva. Feito no Brasil.</p>
+      </div>
+      <nav class="footer__links" aria-label="Rodapé">
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="https://wa.me/5519992255296" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/eco_gesture/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 EstéticaPro. Todos os direitos reservados.</p>
+      <div>
+        <a href="termos.html">Termos de uso</a>
+        <a href="privacidade.html">Privacidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CTA fixo no mobile -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="https://wa.me/5519992255296?text=Ol%C3%A1!%20Quero%20testar%20a%20Est%C3%A9ticaPro%20gr%C3%A1tis." target="_blank" rel="noopener" class="btn btn--primary">Testar grátis por 7 dias</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
